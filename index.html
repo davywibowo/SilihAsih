@@ -670,7 +670,7 @@
 
               <div class="flex justify-center space-x-5">
                 <a
-                  href="https://api.whatsapp.com/send?phone=6282115543575&text=Halo👋%20Selamat%20datang%20di%20Warkop%20Silih%20Asih.☕🍞%20Mau%20Pesan%20apa%20hari%20ini?"
+                  href="https://api.whatsapp.com/send?phone=6282115543575&text=Halo👋%20Selamat%20datang%20di%20Warkop%20Silih%20Asih."
                   target="_blank"
                 >
                   <img
@@ -1002,14 +1002,7 @@
         document.body.style.overflow = "auto";
       }
 
-      function sendQuickMessage(order) {
-        const message = `Halo! 👋\nSelamat datang di Warkop Silih Asih. ☕🍞\n\nSaya mau pesan: ${order}\n\nMohon info harga dan ketersediaannya ya!`;
-        const url = `https://api.whatsapp.com/send?phone=6282115543575&text=${encodeURIComponent(
-          message
-        )}`;
-        window.open(url, "_blank");
-        closeQuickOrder();
-      }
+    
 
       // Order form submission
       document
@@ -1031,7 +1024,7 @@
           orderDetails += `\n\nKami siap melayani dari jam 08.00 - 22.00 🕗`;
 
           const finalMessage = greeting + orderDetails;
-          const url = `https://api.whatsapp.com/send?phone=6281316511411&text=${encodeURIComponent(
+          const url = `https://api.whatsapp.com/send?phone=6282115543575&text=${encodeURIComponent(
             finalMessage
           )}`;
 
